@@ -1,0 +1,78 @@
+.report_title{
+    margin-left: 5%;
+}
+
+.main_container_report {
+    margin-left: 5%;
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chaild_conteiner_report_racer_data{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+    background: #f4f4f4;
+    margin-top: 3px;
+    border-radius: 8px;
+}
+
+.chaild_conteiner_report_racer_data div{
+    width: 200px;
+}
+
+.chaild_conteiner_report_racer_data div:nth-child(1){
+    width: 75px;
+    margin-left: 3%;
+}
+
+.chaild_conteiner_report_racer_data div:nth-child(3){
+    width: 240px;
+}
+
+.chaild_conteiner_report_racer_data div h5 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.container_report_title {
+    background: #00363a;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    margin-top: 3px;
+    border-radius: 8px;
+}
+
+.container_report_title div h4 {
+    color: white;
+}
+
+.container_report_title div:nth-child(1){
+    margin-left: 4%;
+}
+
+.container_report_title div:nth-child(2){
+    margin-left: 5%;
+}
+
+.container_report_title div:nth-child(3){
+    margin-left: 16%;
+}
+
+.container_report_title div:nth-child(4){
+    margin-left: 13%;
+}
+
+.container_report_title div:nth-child(5){
+    margin-left: 10%;
+}
+
+.container_report_title div:nth-child(6){
+    margin-left: 6%;
+}
+
+.racer_nik_name {
+    margin-top: 4px;
+}

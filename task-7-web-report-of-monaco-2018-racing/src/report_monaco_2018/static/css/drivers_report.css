@@ -1,0 +1,46 @@
+.main_container_driver_report {
+    margin-left: 5%;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chaild_container_driver_report{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3%;
+    background: #f4f4f4;
+    margin-top: 3px;
+    border-radius: 8px;
+}
+
+.chaild_container_driver_report div{
+    width: 100%;
+    margin-left: 12%;
+}
+
+.chaild_container_driver_report div:nth-child(2){
+    margin-left: 20%;
+}
+
+.chaild_container_driver_report div h5 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.container_driver_report_title {
+    background: lightgrey;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    margin-top: 3px;
+    border-radius: 8px;
+}
+
+.container_driver_report_title div:nth-child(1){
+    margin-left: 20%;
+}
+
+.container_driver_report_title div:nth-child(2){
+    margin-left: 36%;
+}

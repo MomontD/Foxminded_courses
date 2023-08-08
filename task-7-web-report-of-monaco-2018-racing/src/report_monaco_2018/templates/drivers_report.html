@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %} Drivers report {% endblock %}
+
+{% block body%}
+
+    <div class="report_title">
+        <h2> Drivers report </h2>
+    </div>
+    <div class="main_container_driver_report">
+        <div class="container_driver_report_title">
+            <div><h4> Name </h4></div>
+            <div><h4> Code </h4></div>
+        </div>
+        {% for driver in report %}
+            <div class="chaild_container_driver_report">
+                <div class="racer_nik_name"><h5> {{ driver.name }} </h5></div>
+                <div><h5><a href="{{ url_for('driver_details', driver_id=driver.nik_name) }}"> {{ driver.nik_name }} </a> </h5></div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock%}

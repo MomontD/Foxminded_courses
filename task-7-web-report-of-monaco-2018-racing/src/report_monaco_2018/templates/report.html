@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %} Racing report {% endblock %}
+
+{% block body%}
+
+    <div class="report_title">
+        <h2> Report of monaco 2018 racing</h2>
+    </div>
+    <div class="main_container_report">
+        <div class="container_report_title">
+            <div><h4> Code </h4></div>
+            <div><h4> Name </h4></div>
+            <div><h4> Team </h4></div>
+            <div><h4> Start Time </h4></div>
+            <div><h4> End Time </h4></div>
+            <div><h4> Result Time </h4></div>
+        </div>
+        {% for racer in report %}
+            <div class="chaild_conteiner_report_racer_data">
+                <div class="racer_nik_name">
+                    <h5>{% if order %}
+                            {{ loop.revindex }}.
+                        {% else  %}
+                            {{ loop.index }}.
+                        {% endif %}
+                        {{ racer.nik_name}} </h5>
+                </div>
+                <div><h5> {{ racer.name}} </h5></div>
+                <div><h5> {{ racer.team}} </h5></div>
+                <div><h5> {{ racer.start_time}} </h5></div>
+                <div><h5> {{ racer.end_time }} </h5></div>
+                <div><h5> {{ racer.result_time }} </h5></div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock%}
